@@ -372,6 +372,64 @@ img {
   color: var(--muted);
 }
 
+.contact-section {
+  padding-top: 56px;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: start;
+}
+
+.contact-photo {
+  width: min(420px, 100%);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+  aspect-ratio: 3 / 4;
+}
+
+.contact-content {
+  color: var(--muted);
+  display: grid;
+  gap: 16px;
+  font-size: 0.98rem;
+}
+
+.map-card {
+  background: white;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.map-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.map-frame {
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.map-frame iframe {
+  width: 100%;
+  height: 240px;
+  border: 0;
+  display: block;
+}
+
 .treatment-section .section-header {
   text-align: center;
 }
