@@ -500,11 +500,12 @@ img {
 
 .practical-photo {
   width: min(420px, 100%);
-  aspect-ratio: 4 / 3;
+  height: auto;
   border-radius: var(--radius-md);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
-  object-fit: cover;
+  display: block;
+  object-fit: contain;
 }
 
 .info-box {
