@@ -142,7 +142,7 @@ img {
 }
 
 .profile-content h1 {
-  font-size: clamp(1.85rem, 2.8vw, 2.5rem);
+  font-size: clamp(1.3rem, 2vw, 1.75rem);
   margin: 12px 0 12px;
 }
 
@@ -423,10 +423,42 @@ img {
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
   background: linear-gradient(135deg, rgba(15, 118, 110, 0.08), rgba(15, 118, 110, 0.02));
+  object-fit: cover;
+}
+
+.practical-grid {
   display: grid;
-  place-items: center;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: start;
+}
+
+.practical-text {
   color: var(--muted);
-  font-weight: 600;
+  display: grid;
+  gap: 16px;
+  font-size: 0.98rem;
+}
+
+.practical-photo {
+  width: min(420px, 100%);
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  object-fit: cover;
+}
+
+.info-box {
+  margin-top: 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  background: white;
+  color: var(--muted);
+  font-size: 0.9rem;
+  display: grid;
+  gap: 4px;
 }
 
 .treatment-categories {
