@@ -318,13 +318,35 @@ img {
   text-align: center;
 }
 
-.interest-list li {
-  padding: 14px 18px;
-  border-radius: var(--radius-sm);
+.interest-card {
+  padding: 20px 18px;
+  border-radius: var(--radius-md);
   background: white;
   border: 1px solid var(--border);
   color: var(--muted);
   font-weight: 500;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  box-shadow: var(--shadow);
+}
+
+.interest-card p {
+  margin: 0;
+}
+
+.interest-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: rgba(15, 118, 110, 0.12);
+  color: var(--brand);
+  font-size: 1.5rem;
 }
 
 .info-grid {
