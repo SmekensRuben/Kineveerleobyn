@@ -1,12 +1,13 @@
 :root {
   color-scheme: light;
-  --brand: #0f766e;
-  --brand-dark: #0a4d48;
-  --accent: #e0f2f1;
+  --brand: #7c3aed;
+  --brand-dark: #4c1d95;
+  --brand-rgb: 124, 58, 237;
+  --accent: #f5d0fe;
   --text: #0f172a;
   --muted: #475569;
   --surface: #ffffff;
-  --surface-alt: #f8fafc;
+  --surface-alt: #fdf4ff;
   --border: #e2e8f0;
   --shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
   --radius-lg: 24px;
@@ -36,7 +37,7 @@ a {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid rgba(15, 118, 110, 0.35);
+  outline: 3px solid rgba(var(--brand-rgb), 0.35);
   outline-offset: 2px;
 }
 
@@ -105,12 +106,12 @@ img {
   color: white;
   font-weight: 600;
   border: none;
-  box-shadow: 0 10px 25px rgba(15, 118, 110, 0.2);
+  box-shadow: 0 10px 25px rgba(var(--brand-rgb), 0.2);
 }
 
 .hero {
   padding: 64px 0 80px;
-  background: linear-gradient(120deg, rgba(15, 118, 110, 0.08), rgba(255, 255, 255, 0.8));
+  background: linear-gradient(120deg, rgba(var(--brand-rgb), 0.14), rgba(255, 255, 255, 0.85));
 }
 
 .hero-profile {
@@ -138,7 +139,7 @@ img {
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
-  border: 6px solid rgba(15, 118, 110, 0.15);
+  border: 6px solid rgba(var(--brand-rgb), 0.18);
 }
 
 .profile-content h1 {
@@ -200,7 +201,7 @@ img {
 
 .hero-visual {
   border-radius: var(--radius-lg);
-  background: radial-gradient(circle at top, #e0f2f1, #ffffff);
+  background: radial-gradient(circle at top, var(--accent), #ffffff);
   padding: 32px;
   min-height: 320px;
   display: grid;
@@ -269,7 +270,7 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 12px;
-  background: rgba(15, 118, 110, 0.12);
+  background: rgba(var(--brand-rgb), 0.16);
   display: grid;
   place-items: center;
   font-weight: 700;
@@ -302,7 +303,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(15, 118, 110, 0.1);
+  background: rgba(var(--brand-rgb), 0.12);
   color: var(--brand);
   padding: 6px 12px;
   border-radius: 999px;
@@ -344,7 +345,7 @@ img {
   border-radius: 18px;
   display: grid;
   place-items: center;
-  background: rgba(15, 118, 110, 0.12);
+  background: rgba(var(--brand-rgb), 0.16);
   color: var(--brand);
   font-size: 1.5rem;
 }
@@ -480,7 +481,7 @@ img {
   border-radius: var(--radius-md);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
-  background: linear-gradient(135deg, rgba(15, 118, 110, 0.08), rgba(15, 118, 110, 0.02));
+  background: linear-gradient(135deg, rgba(var(--brand-rgb), 0.18), rgba(var(--brand-rgb), 0.04));
   object-fit: cover;
 }
 
@@ -539,7 +540,7 @@ img {
 }
 
 .notice {
-  background: rgba(15, 118, 110, 0.08);
+  background: rgba(var(--brand-rgb), 0.12);
   border-left: 4px solid var(--brand);
   padding: 16px 20px;
   border-radius: var(--radius-sm);
